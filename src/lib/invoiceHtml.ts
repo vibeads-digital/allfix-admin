@@ -5,6 +5,9 @@ const GATEWAY_LABEL: Record<string, string> = {
   easebuzz: 'EaseBuzz',
   payu: 'PayU',
   cashfree: 'Cashfree',
+  sabpaisa: 'SabPaisa',
+  paytm: 'Paytm',
+  airpay: 'Airpay',
 };
 
 const PAYMENT_TYPE_LABEL: Record<string, string> = {

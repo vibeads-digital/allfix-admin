@@ -14,6 +14,9 @@ const GATEWAY_LABEL: Record<GatewayConfig['gateway'], string> = {
   easebuzz: 'EaseBuzz',
   payu: 'PayU CheckoutPro',
   cashfree: 'Cashfree',
+  sabpaisa: 'SabPaisa',
+  paytm: 'Paytm',
+  airpay: 'Airpay',
 };
 
 const GATEWAY_KEY = ['gateway-config'] as const;

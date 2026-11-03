@@ -39,7 +39,7 @@ export type AdminPayment = {
   status: PaymentStatus;
   paymentType: "trial" | "subscription" | "renewal" | "upgrade";
   paymentMethod: "card" | "upi" | "netbanking" | "wallet" | "emi" | null;
-  gateway: "razorpay" | "easebuzz" | "payu" | "cashfree" | null;
+  gateway: "razorpay" | "easebuzz" | "payu" | "cashfree" | "sabpaisa" | "paytm" | "airpay" | null;
   gatewayOrderId: string | null;
   gatewayPaymentId: string | null;
   failureReason: string | null;
@@ -117,7 +117,7 @@ export const changeSubscriptionPlan = (id: number, planId: number) =>
 // ── Gateway Config ─────────────────────────────────────────────────────────────
 
 export type GatewayConfig = {
-  gateway: 'razorpay' | 'easebuzz' | 'payu' | 'cashfree';
+  gateway: 'razorpay' | 'easebuzz' | 'payu' | 'cashfree' | 'sabpaisa' | 'paytm' | 'airpay';
   isActive: boolean;
   isDefault: boolean;
   sortOrder: number;
